@@ -46,6 +46,7 @@
 -- GROUP BY b.Category
 -- ORDER BY TotalBorrowed DESC;
 
+-- CREATE VIEW Penalty_Report AS
 -- SELECT s.StudentID, s.Name, b.Title, i.IssueDate,
 -- TRUNC(SYSDATE - i.IssueDate) AS DaysDelayed,
 -- (TRUNC(SYSDATE - i.IssueDate) - 14) * 5 AS PenaltyAmount
@@ -54,6 +55,8 @@
 -- JOIN Books b ON b.BookID = i.BookID
 -- WHERE i.ReturnDate IS NULL
 -- AND TRUNC(SYSDATE - i.IssueDate) > 14;
+
+-- SELECT * FROM Penalty_Report;
 
 -- DELETE FROM Students1
 -- WHERE StudentID NOT IN (
